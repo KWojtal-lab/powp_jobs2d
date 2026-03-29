@@ -12,7 +12,7 @@ public class ComplexCommand extends DriverCommand {
     }
 
     @Override
-    void execute() {
+    public void execute() {
         for (DriverCommand cmd : commands)
         {
             cmd.execute();
