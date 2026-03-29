@@ -10,7 +10,7 @@ public final class CommandFactory {
 
     }
 
-    public static ComplexCommand rightTriangleCommand(int x, int y, int width, int height, Job2dDriver driver)
+    public static DriverCommand rightTriangleCommand(int x, int y, int width, int height, Job2dDriver driver)
     {
         ArrayList<DriverCommand> commands = new ArrayList<>();
         commands.add(new SetPositionCommand(x, y, driver));
@@ -21,7 +21,7 @@ public final class CommandFactory {
         return new ComplexCommand(commands);
     }
 
-    public static ComplexCommand crossCommand(int x, int y, int armSize, Job2dDriver driver) {
+    public static DriverCommand crossCommand(int x, int y, int armSize, Job2dDriver driver) {
         ArrayList<DriverCommand> commands = new ArrayList<>();
 
         commands.add(new SetPositionCommand(x, y, driver));
